@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eda827d-aa99-44b3-82a9-eb2842580603" name="Default" comment="add not working ignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/public/images/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/public/images/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/public/images/noimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/views/about.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/views/contact.jade" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/routes/users.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/app.js" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/package.json" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/views/index.jade" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basicExpressServer/express_website/views/layout.jade" afterPath="$PROJECT_DIR$/basicExpressServer/express_website/views/layout.jade" />
     </list>
     <list id="6f3af586-aa8e-4031-91a2-26e7b87b898a" name="Rejected commit: Default" comment="add not working ignore" />
     <ignored path="10PROJECTS.iws" />
@@ -51,18 +43,47 @@
         <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2173913">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_2" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js">
+        <entry file="file://$PROJECT_DIR$/course-sources/Learn-Nodejs-by-building-10-projects/03_Basic_Express_Website/express-website/routes/contact.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -90,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/contact.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36231884">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding />
             </state>
@@ -121,20 +142,22 @@
         <option value="$PROJECT_DIR$/simpleServer/server.js" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/draft.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch" />
-        <option value="$PROJECT_DIR$/basicExpressServer/express_website/package.json" />
         <option value="$PROJECT_DIR$/course-sources/Learn-Nodejs-by-building-10-projects/03_Basic_Express_Website/express-website/views/layout.jade" />
         <option value="$USER_HOME$/.gitignore_global" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/views/index.jade" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/views/layout.jade" />
-        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js" />
-        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/views/about.jade" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/npm-debug.log" />
-        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js" />
-        <option value="$PROJECT_DIR$/basicExpressServer/express_website/app.js" />
         <option value="$PROJECT_DIR$/basicExpressServer/express_website/views/contact.jade" />
+        <option value="$PROJECT_DIR$/basicExpressServer/express_website/app.js" />
+        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js" />
+        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js" />
+        <option value="$PROJECT_DIR$/course-sources/Learn-Nodejs-by-building-10-projects/03_Basic_Express_Website/express-website/routes/contact.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2" />
+        <option value="$PROJECT_DIR$/basicExpressServer/express_website/package.json" />
+        <option value="$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js" />
       </list>
     </option>
   </component>
@@ -163,6 +186,9 @@
             <id>Code style issuesCSS</id>
           </State>
           <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
             <id>Control flow issuesJavaScript</id>
           </State>
           <State>
@@ -181,13 +207,22 @@
             <id>Invalid elementsCSS</id>
           </State>
           <State>
+            <id>JSON</id>
+          </State>
+          <State>
             <id>Jade</id>
           </State>
           <State>
             <id>JavaScript</id>
           </State>
           <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
             <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -375,6 +410,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10PROJECTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10PROJECTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basicExpressServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10PROJECTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10PROJECTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basicExpressServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches">
@@ -398,7 +477,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="254" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -417,9 +496,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1065" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Jade&#10;HTML" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Markdown&#10;Jade&#10;HTML" />
     <property name="SearchEverywhereHistoryKey" value="mihai&#9;null&#9;null" />
     <property name="PluginDummyText.Genre" value="latin" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -501,12 +582,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10268562" sideWeight="0.49627262" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17482886" sideWeight="0.49627262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Demandware" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5018431" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3088392" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -518,7 +600,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -773,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18134715">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18480138">
@@ -810,13 +884,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024916943">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7475083">
@@ -828,15 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025951557">
           <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,11 +920,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/course-sources/Learn-Nodejs-by-building-10-projects/README.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.016538037">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
@@ -876,6 +929,11 @@
             <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.016538037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -889,10 +947,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js">
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/about.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/contact.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course-sources/Learn-Nodejs-by-building-10-projects/03_Basic_Express_Website/express-website/routes/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -905,18 +995,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/about.jade">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/views/contact.jade">
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36231884">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicExpressServer/express_website/routes/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2173913">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
         </state>
       </provider>
