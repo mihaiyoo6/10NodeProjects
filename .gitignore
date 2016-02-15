@@ -1,5 +1,6 @@
 /basicExpressServer/express_website/node_modules
 /course-sources/
+node_modules/
 /.idea/
 **/.idea/workspace.xml
 ## File-based project format:
