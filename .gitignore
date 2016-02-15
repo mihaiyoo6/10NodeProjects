@@ -1,1 +1,9 @@
+/basicExpressServer/express_website/node_modules
 /course-sources/
+/.idea/
+**/.idea/workspace.xml
+## File-based project format:
+/idea/workspace.xml
+*.ipr
+*.iws
+*.xml
