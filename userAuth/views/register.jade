@@ -1,28 +1,26 @@
 extends layout
 
 block content
-    .container
-        h1 Register
-        p Please register using the form below
-        form(method='post', action='/users/register', enctype='multipart/form-data')
-            .form-group
-                label Name
-                input.form-control(name='name', type='text', placeholder='Enter Name')
-            .form-group
-                label Email
-                input.form-control(name='email', type='email', placeholder='Enter Email')
-            .form-group
-                label User Name
-                input.form-control(name='userName', type='text', placeholder='Enter User Name')
-            .form-group
-                label Password
-                input.form-control(name='password', type='password', placeholder='Enter Password')
-            .form-group
-                label Confirm password
-                input.form-control(name='confirmPassword', type='password', placeholder='Confirm Passowrd')
-            .form-group
-                label Profile Image
-                input.form-control(name='profileImg', type='file')
-            input.btn.btn-default(name='submit', type='submit', vaue='Register')
-
-
+	.container
+		h1 Register
+		p Please register using the form below
+		form(method='post', action='/users/register', enctype='multipart/form-data')
+			.form-group
+				label Name
+				input.form-control(name='name', type='text', placeholder='Enter Name')
+			.form-group
+				label Email
+				input.form-control(name='email', type='email', placeholder='Enter Email')
+			.form-group
+				label User Name
+				input.form-control(name='userName', type='text', placeholder='Enter User Name')
+			.form-group
+				label Password
+				input.form-control(name='password', type='password', placeholder='Enter Password')
+			.form-group
+				label Confirm password
+				input.form-control(name='confirmPassword', type='password', placeholder='Confirm Passowrd')
+			.form-group
+				label Profile Image
+				input.form-control(name='profileImg', type='file')
+			input.btn.btn-default(name='submit', type='submit', vaue='Register')

@@ -25,7 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 //Handle files uploads
-app.use(multer({dest:'./uploads'}));
+app.use(multer({dest: './uploads'}));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -35,9 +35,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //Handle Express Session
 app.use(session({
-    secret: 'secret',
-    saveUninitialized: true,
-    resave: true
+	secret: 'secret',
+	saveUninitialized: true,
+	resave: true
 }));
 
 //Passport
@@ -47,29 +47,29 @@ app.use(passport.session());
 //validator
 
 app.use(expressValidator({
-    errorFormatter: (param, msg, value) => {
-        let namespace = param.split('.'),
-            root    = namespace.shift(),
-            formParam = root;
+	errorFormatter: (param, msg, value) => {
+		let namespace = param.split('.'),
+			root = namespace.shift(),
+			formParam = root;
 
-        while(namespace.length) {
-            formParam += '[' + namespace.shift() + ']';
-        }
-        return {
-            param : formParam,
-            msg   : msg,
-            value : value
-        };
-    }
+		while (namespace.length) {
+			formParam += '[' + namespace.shift() + ']';
+		}
+		return {
+			param: formParam,
+			msg: msg,
+			value: value
+		};
+	}
 }));
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(flash());
-app.use( (req, res, next) => {
-    res.locals.messages = require('express-messages')(req, res);
-    next();
+app.use((req, res, next) => {
+	res.locals.messages = require('express-messages')(req, res);
+	next();
 });
 
 
@@ -78,9 +78,9 @@ app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-    let err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+	let err = new Error('Not Found');
+	err.status = 404;
+	next(err);
 });
 
 // error handlers
@@ -88,23 +88,23 @@ app.use((req, res, next) => {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-    app.use((err, req, res, next) => {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
+	app.use((err, req, res, next) => {
+		res.status(err.status || 500);
+		res.render('error', {
+			message: err.message,
+			error: err
+		});
+	});
 }
 
 // production error handler
 // no stacktraces leaked to user
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+	res.status(err.status || 500);
+	res.render('error', {
+		message: err.message,
+		error: {}
+	});
 });
 
 
