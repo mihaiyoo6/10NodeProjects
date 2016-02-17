@@ -1,5 +1,6 @@
 "use strict";
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 mongoose.connect('mongodb://localhost/nodeauth');
 let	db = mongoose.connection;
 
@@ -10,7 +11,9 @@ let UserSchema = mongoose.Schema({
 		inedx: true
 	},
 	password: {
-		type: String
+		type: String,
+		required: true,
+		bcrypt: true
 	},
 	email: {
 		type: String
@@ -26,5 +29,9 @@ let UserSchema = mongoose.Schema({
 let User = module.exports = mongoose.model('User', UserSchema );
 
 module.exports.createUser = (newUser, callback)=>{
-	newUser.save(callback);
+	bcrypt.hash(newUser.password, 10, (err, hash)=>{
+		if(err) throw error;
+		newUser.password = hash
+		newUser.save(callback);
+	});
 }

@@ -70,7 +70,8 @@ router.post('/register', (req, res, next)=>{
 				throw err;
 			}
 			console.log(user);
-
+			res.location('/');
+			res.redirect('/');
 		});
 
 	}
