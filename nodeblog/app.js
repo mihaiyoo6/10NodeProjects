@@ -14,7 +14,7 @@ const flash = require('connect-flash');
 
 
 const routes = require('./routes/index');
-const users = require('./routes/users');
+const posts = require('./routes/posts');
 
 let app = express();
 
@@ -49,8 +49,8 @@ app.use(session({
 //Validator
 app.use(expressValidator({
 	errorFormatter(param, msg, value){
-		let name = param.split('.'),
-			root = param.shift(),
+		let namespace = param.split('.'),
+			root = namespace.shift(),
 			formParam = root;
 		while (namespace.length){
 			formParam +='['+namespace.shift() + ']';
@@ -77,7 +77,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/posts', posts);
 //app.use('/categories', categories);
 
 // catch 404 and forward to error handler
