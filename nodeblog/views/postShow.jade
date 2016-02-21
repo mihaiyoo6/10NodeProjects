@@ -16,7 +16,7 @@ block content
 			h3 Comments
 			each comment, i in post.comments
 				.comment
-					p.comment-name #{comment.name}
+					p.comment-name #{comment.name} - #{moment(comment.commentDate).fromNow()}
 					p.comment-text #{comment.body}
 				br
 		h3 Add comment
