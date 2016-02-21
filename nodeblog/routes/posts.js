@@ -8,7 +8,6 @@ router.get('/add', (req, res, next) => {
 	//get Cateories
 	let categories = db.get('categories');
 	categories.find({},{},(err, categories) => {
-		console.log(categories);
 		if(err){
 
 		}else{
@@ -21,6 +20,19 @@ router.get('/add', (req, res, next) => {
 
 });
 
+router.get('/show/:id', (req, res, next) => {
+	let posts = db.get('posts');
+	posts.findOne({_id: req.params.id},{}, (err, post) => {
+		if(err){
+			console.log('Post NOT Found');
+		}
+		res.render('postShow',{
+			'post': post
+		});
+	});
+});
+
+
 router.post('/add', (req, res, next) => {
 	//get from values
 	let title = req.body.title,
@@ -29,8 +41,7 @@ router.post('/add', (req, res, next) => {
 		author = req.body.author,
 		date = new Date(),
 		mainImage = {};
-
-	if(req.files.mainimage){
+	if(req.files.mainImage){
 		mainImage ={
 			originalName: req.files.mainImage.originalName,
 			name : req.files.mainImage.name,
@@ -73,6 +84,54 @@ router.post('/add', (req, res, next) => {
 				req.flash('success', 'Post Submitted');
 				res.location('/');
 				res.redirect('/');
+			}
+		});
+	}
+});
+
+router.post('/addcomment',(req, res, next) =>{
+	let postId = req.body.postId,
+		name = req.body.name,
+		email = req.body.email,
+		body = req.body.body,
+		commentDate = new Date();
+
+	req.checkBody('name', 'Name field is required').notEmpty();
+	req.checkBody('email', 'Email field is required').notEmpty();
+	req.checkBody('email', 'Email is not formated correctly!').isEmail();
+	req.checkBody('body', 'Body field is required').notEmpty();
+
+	let errors = req.validationErrors(),
+		posts = db.get('posts'),
+		post = posts.findById(postId);
+
+
+	if(errors){
+		res.send('postShow',{
+			'errors': errors,
+			'post': post
+		});
+	}else{
+		let comment = {
+			name: name,
+			body: body,
+			email: email,
+			commentDate: commentDate
+		};
+
+		posts.update({
+			'_id': postId
+		},{
+			$push:{
+				'comments': comment
+			}
+		}, (err, post) => {
+			if( err ){
+				throw err;
+			}else{
+				req.flash('success', 'Comment Added');
+				res.location('/posts/show/'+postId);
+				res.redirect('/posts/show/'+postId);
 			}
 		});
 	}
