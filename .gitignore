@@ -7,4 +7,5 @@ node_modules/
 /idea/workspace.xml
 *.ipr
 *.iws
+/nodeblog/public/images/uploads
 *.xml
