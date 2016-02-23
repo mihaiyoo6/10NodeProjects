@@ -1,0 +1,20 @@
+extends ../../layouts/default
+
+block head
+	title Events Page
+
+block body
+	div.row
+		div.col-md-8
+			div.page-header
+				h1 View Events
+			ul.events
+				each event, i  in data
+					li
+						strong #{event.name}
+						| -  Posted by #{event.userName}
+						p #{event.description}
+						a(href='/events/show/#{event._id}' class='btn btn-default') Read Mode
+		div.col-md-4
+			div.page-header
+				h1 SideBar
