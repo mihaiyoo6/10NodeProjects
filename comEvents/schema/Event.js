@@ -3,7 +3,6 @@
 //noinspection JSUnresolvedVariable
 exports = module.exports = (app, mongosse) => {
 	let eventSchema = new mongosse.Schema({
-		_id: {type: String},
 		name: {type: String, required: true},
 		description: {type: String},
 		venu: {type: String},

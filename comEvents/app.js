@@ -9,7 +9,8 @@ var config = require('./config'),
     mongoStore = require('connect-mongo')(session),
     http = require('http'),
     path = require('path'),
-    passport = require('passport'),
+	passport = require('passport'),
+	flash = require('connect-flash'),
     mongoose = require('mongoose'),
     helmet = require('helmet'),
     csrf = require('csurf');
@@ -55,12 +56,18 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(csrf({ cookie: { signed: true } }));
+//app.use(csrf({ cookie: { signed: true } }));
 helmet(app);
+
+app.use(flash());
+app.use((req, res, next)=>{
+	res.locals.messages = require('express-messages')(req, res);
+	next();
+});
 
 //response locals
 app.use(function(req, res, next) {
-  res.cookie('_csrfToken', req.csrfToken());
+  //res.cookie('_csrfToken', req.csrfToken());
   res.locals.user = {};
   res.locals.user.defaultReturnUrl = req.user && req.user.defaultReturnUrl();
   res.locals.user.username = req.user && req.user.username;
