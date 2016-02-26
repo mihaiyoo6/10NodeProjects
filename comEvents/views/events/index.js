@@ -48,6 +48,21 @@ exports.read = (req, res, next)=>{
 	});
 };
 
+exports.edit = (req, res, next)=>{
+	console.log('eddit');
+	req.app.db.models.Event.findById(req.params.id).exec((err, event) => {
+		if (err) {
+			return next(err);
+		}
+		if (req.xhr) {
+			res.send(event);
+		}
+		else {
+			res.render('events/edit', { event: event } );
+		}
+	});
+};
+
 exports.add = (req, res, next) =>{
 
 	if(!req.isAuthenticated()){
@@ -92,6 +107,77 @@ exports.create = (req, res, next ) => {
 			req.flash('succes', 'Event added');
 			res.location('/events');
 			res.redirect('/events');
+		});
+	});
+
+	workflow.emit('validate');
+};
+
+exports.update = (req, res, next ) => {
+	let workflow = req.app.utility.workflow(req, res);
+	workflow.on('validate', () => {
+		if (!req.body.name) {
+			workflow.outcome.errors.push('Please enter a name.');
+			return workflow.emit('response');
+		}
+
+		workflow.emit('updateEvent');
+	});
+
+	workflow.on('updateEvent', () => {
+		let fieldsToSet = {
+			name: req.body.name,
+			description: req.body.description,
+			venu: req.body.venu,
+			date: req.body.date,
+			startTime: req.body.startTime,
+			endTime: req.body.endTime,
+			userName: req.user.username,
+			search: [
+				req.body.name
+			]
+		};
+		req.app.db.models.Event.findByIdAndUpdate(req.params.id, fieldsToSet, (err, event) => {
+			if (err) {
+				return workflow.emit('exception', err);
+			}
+			console.log('Model Create');
+			workflow.outcome.record = event;
+			req.flash('succes', 'Event Updated');
+			res.location('/events/show/'+req.params.id);
+			res.redirect('/events/show/'+req.params.id);
+		});
+	});
+
+	workflow.emit('validate');
+};
+
+exports.delete = (req, res, next ) => {
+	let workflow = req.app.utility.workflow(req, res);
+	workflow.on('validate', function() {
+		workflow.emit('deleteEvent');
+	});
+
+	workflow.on('deleteEvent', () => {
+		let fieldsToSet = {
+			name: req.body.name,
+			description: req.body.description,
+			venu: req.body.venu,
+			date: req.body.date,
+			startTime: req.body.startTime,
+			endTime: req.body.endTime,
+			userName: req.user.username,
+			search: [
+				req.body.name
+			]
+		};
+		req.app.db.models.Event.findByIdAndRemove(req.params.id, fieldsToSet, (err, event) => {
+			if (err) {
+				return workflow.emit('exception', err);
+			}
+			console.log('Model Create');
+			workflow.outcome.record = event;
+			req.flash('succes', 'Event Removed');
 		});
 	});
 
